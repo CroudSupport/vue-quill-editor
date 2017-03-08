@@ -47,9 +47,11 @@
     },
     mounted() {
       this.initialize()
+    },   
+    ready() {
+      this.initialize()
     },
     beforeDestroy() {
-      // 作者说了，等垃圾回收，不必显式清理
       this.quillEditor = null
     },
     methods: {
